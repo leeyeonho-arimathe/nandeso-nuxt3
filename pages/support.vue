@@ -19,11 +19,28 @@
         <p>でも、支払えない人はどうする？そう考えた時に、せめて、悩みを投稿出来て、誰か一人でも反応できる場を作ってあげたい気持ち。それと、そういった職に務めるためには、決まったコースを通らないと行けません。でも、そうするには、時間とすごいお金がかかります。</p>
         <p>私個人では、実践経験があればと思います。もちろんそれだけじゃダメです。勉強も伴っていけば誰だってできると思います。そういう経験をここで体験していって欲しいです。</p>
       </section>
-      <section>
-        <h3>個人情報取り扱い関して</h3>
-        <p>当サイトは、個人が特定出来るような情報は一切収取しておりません。</p>
-      </section>
+      <div class="pb-3 text-center">
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">個人情報保護方針</button>
+      </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Privacy Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <PP />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
   </div>
 
 </template>
