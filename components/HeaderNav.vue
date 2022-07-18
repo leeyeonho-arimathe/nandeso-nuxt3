@@ -7,11 +7,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><NuxtLink to="/" class="nav-link active">Home</NuxtLink></li>
-          <li class="nav-item"><NuxtLink to="/support" class="nav-link">Support</NuxtLink></li>
+          <li class="nav-item"><NuxtLink to="/" class="nav-link active">検索</NuxtLink></li>
+          <li class="nav-item"><NuxtLink to="/support" class="nav-link">Nandesoは</NuxtLink></li>
         </ul>
         <div>
-          <NuxtLink to="/sign-up" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink to="/members" class="btn btn-primary">Members</NuxtLink>
+          <NuxtLink to="/sign-up" class="btn btn-primary">Write</NuxtLink> <NuxtLink to="/sign-up" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
         </div>
       </div>
     </div>
