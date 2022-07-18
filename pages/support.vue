@@ -21,11 +21,11 @@
         <p>ゆくゆくは、悩みでもないことで気軽にみんなが相談し会える綺麗な空間として利用されてほしいです！</p>
       </section>
       <div class="pb-3 text-center">
-        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">個人情報保護方針</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#privacy-policy-modal">個人情報保護方針</button>
       </div>
     </div>
     <!-- Modal -->
-    <PrivacyPolicyModal />
+    <ModalsPrivacyPolicy />
     <!-- /Modal -->
   </div>
 

@@ -66,7 +66,7 @@
         <div class="form-check">
           <input class="form-check-input is-valid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
           <label class="form-check-label" for="invalidCheck3">
-            Nandeso <a class="link-info" data-bs-toggle="modal" data-bs-target="#pp-modal">プライバシーポリシー</a>を確認の上、同意して送信してください。
+            Nandeso <a class="link-info" data-bs-toggle="modal" data-bs-target="#privacy-policy-modal">プライバシーポリシー</a>を確認の上、同意して送信してください。
             取得したメールアドレスは、以下の目的で使用します。
             <ul>
               <li>ログイン情報</li>
@@ -78,30 +78,13 @@
         </div>
       </div>
       <div class="col-12 my-3 text-center">
-        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#auth-modal">次へ</a>
+        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#auth-email-modal">次へ</a>
       </div>
     </div>
-    <!-- PP Modal -->
-    <div class="modal fade" id="pp-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="pp-modalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="pp-modalLabel">Privacy Policy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <PP />
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /PP Modal -->
-    <!-- Auth Modal -->
-    <AuthEmailVerify />
-    <!-- /Auth Modal -->
+    <!-- Modals -->
+    <ModalsPrivacyPolicy />
+    <ModalsAuthEmailVerify />
+    <!-- /Modals -->
   </div>
 </template>
 

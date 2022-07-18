@@ -1,9 +1,9 @@
 <template>
-  <div class="modal fade" id="auth-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="auth-modalLabel" aria-hidden="true">
+  <div class="modal fade" id="auth-email-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="auth-email-modalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="auth-modalLabel">メールアドレス認証</h5>
+        <h5 class="modal-title" id="auth-email-modalLabel">メールアドレス認証</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
