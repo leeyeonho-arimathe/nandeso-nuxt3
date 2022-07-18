@@ -11,7 +11,7 @@
           <li class="nav-item"><NuxtLink to="/support" class="nav-link">Nandesoは</NuxtLink></li>
         </ul>
         <div>
-          <NuxtLink to="/sign-up" class="btn btn-primary">Write</NuxtLink> <NuxtLink to="/sign-up" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
+          <NuxtLink to="/write" class="btn btn-primary">Write</NuxtLink> <NuxtLink to="/sign-up" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
         </div>
       </div>
     </div>
