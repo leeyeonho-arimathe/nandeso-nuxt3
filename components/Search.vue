@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-5 pt-5 justify-content-center search-container">
-    <div class="form-search">
+  <div class="mb-3 mt-5 pt-5 justify-content-center search-container">
+    <div class="my-3">
       <p class="text-center fw-light">あなたが悩んでいるのは何ですか？少しお聞かせください。</p>
       <form>
         <div class="input-group">
@@ -9,15 +9,19 @@
         </div>
       </form>
     </div>
+    <div>
+      <div class="mb-3">
+        <div class="list-group w-auto">
+          <PartsListItem />
+          <PartsListItem />
+          <PartsListItem />
+          <PartsListItem />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
-
-.form-search {
-  max-width: 720px;
-  padding: 15px;
-  margin: auto;
-}
 
 </style>
