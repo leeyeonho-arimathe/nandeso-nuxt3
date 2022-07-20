@@ -13,7 +13,7 @@
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput2" class="form-label">ハッシュタグ<a href="#"><span class="material-symbols-outlined">help</span></a></label>
+        <label for="exampleFormControlInput2" class="form-label">ハッシュタグ<a href="#" data-bs-toggle="modal" data-bs-target="#explane-message-modal"><span class="material-symbols-outlined">help</span></a></label>
         <input type="text" class="form-control" id="exampleFormControlInput2">
       </div>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -21,6 +21,7 @@
         <button class="btn btn-primary" type="button">公開</button>
       </div>
     </div>
+    <ModalsExplaneMessage />
   </div>
 </template>
 
