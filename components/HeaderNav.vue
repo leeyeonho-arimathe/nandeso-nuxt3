@@ -12,7 +12,7 @@
           <li class="nav-item"><NuxtLink to="/favorite-list/" class="nav-link">お気に入り</NuxtLink></li>
         </ul>
         <div>
-          <NuxtLink to="/write" class="btn btn-primary">Write</NuxtLink> <NuxtLink to="/sign-up" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
+          <NuxtLink to="/write/" class="btn btn-primary">Write</NuxtLink> <NuxtLink to="/sign-up" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
         </div>
       </div>
     </div>
