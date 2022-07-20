@@ -8,7 +8,8 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><NuxtLink to="/" class="nav-link active">検索</NuxtLink></li>
-          <li class="nav-item"><NuxtLink to="/support" class="nav-link">Nandesoは</NuxtLink></li>
+          <li class="nav-item"><NuxtLink to="/support/" class="nav-link">Nandesoは</NuxtLink></li>
+          <li class="nav-item"><NuxtLink to="/favorite-list/" class="nav-link">お気に入り</NuxtLink></li>
         </ul>
         <div>
           <NuxtLink to="/write" class="btn btn-primary">Write</NuxtLink> <NuxtLink to="/sign-up" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
@@ -26,7 +27,7 @@ export default {
         defer: true,
         type: 'module',
         src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
-      }
+      },
     ]
   }
 }
