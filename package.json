@@ -7,6 +7,9 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.5"
+    "nuxt": "3.0.0-rc.6"
+  },
+  "dependencies": {
+    "firebase": "9.9.1"
   }
 }
