@@ -8,17 +8,20 @@
         <form @submit.prevent="signIn">
           <img class="mb-4" src="https://placeimg.com/52/52/any" alt="" width="72" height="57">
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input v-model="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
             <label for="floatingInput">メールアドレス</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input v-model="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
             <label for="floatingPassword">パスワード</label>
           </div>
 
-          <div class="checkbox mb-3"><label><input type="checkbox" value="remember-me"> Remember me</label></div>
+          <div class="checkbox mb-3"><label><input v-model="rememberMe" type="checkbox" value="remember-me"> Remember me</label></div>
           <div class="mb-3">
             <a href="#" data-bs-toggle="modal" data-bs-target="#reset-password-modal">パスワードが分からない方はこちら</a>
+          </div>
+          <div class="mb-3" v-if="loginError">
+            {{ loginError }}
           </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">ログイン</button>
         </form>
@@ -30,13 +33,25 @@
   </div>
 </template>
 
-<script setup>
-const firebaseUser = useFirebaseUserStore();
+<script setup lang="ts">
+import {
+  firebaseAuthValidateMessage
+} from '@/assets/js/validate.js'
+
+const email = ref('');
+const password = ref('');
+const loginError = ref();
+const rememberMe = ref(true);
 
 const signIn = async () => {
-  const email = "mclljr1243@gmail.com";
-  const password = "123123123";
-  await signInUser(email, password);
+  try {
+    const auth = await signInUser(email.value, password.value, rememberMe.value);
+    if (auth) {
+      return navigateTo('/');
+    }
+  } catch (e) {
+    loginError.value = firebaseAuthValidateMessage(e);
+  }
 }
 
 </script>

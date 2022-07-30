@@ -9,10 +9,10 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><NuxtLink to="/" class="nav-link active">検索</NuxtLink></li>
           <li class="nav-item"><NuxtLink to="/support/" class="nav-link">Nandesoは</NuxtLink></li>
-          <li class="nav-item"><NuxtLink to="/favorite-list/" class="nav-link">お気に入り</NuxtLink></li>
+          <li v-if="userStore" class="nav-item"><NuxtLink to="/favorite-list/" class="nav-link">お気に入り</NuxtLink></li>
         </ul>
         <div>
-          <NuxtLink to="/write/" class="btn btn-primary">Write</NuxtLink> <NuxtLink to="/sign-up/" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink v-if="!userStore" to="/sign-in/" class="btn btn-primary">Login</NuxtLink> <button v-if="userStore" @click="userSignOut" type="button" class="btn btn-primary">LogOut</button>
+          <NuxtLink v-if="userStore" to="/write/" class="btn btn-primary">Write</NuxtLink> <NuxtLink v-if="!userStore" to="/sign-up/" class="btn btn-primary">SignUp</NuxtLink> <NuxtLink v-if="!userStore" to="/sign-in/" class="btn btn-primary">Login</NuxtLink> <button v-if="userStore" @click="userSignOut" type="button" class="btn btn-primary">LogOut</button>
         </div>
       </div>
     </div>
@@ -41,30 +41,6 @@ const userStore = useFirebaseUserStore();
     }
   }
 </script>
-
-
-<!-- <script>
-const credentials = ref();
-export default {
-  head: {
-    script: [
-      // {
-      //   defer: true,
-      //   type: 'module',
-      //   src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
-      // },
-    ]
-  },
-  data() {
-    return {
-      user: {}
-    }
-  },
-  methods: {
-
-  }
-}
- </script> -->
 
 <style scoped>
 

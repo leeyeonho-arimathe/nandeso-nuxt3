@@ -3,6 +3,8 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged,
+  browserSessionPersistence,
+  browserLocalPersistence
 } from 'firebase/auth'
 /**
  * 新規アカウント登録
@@ -20,10 +22,12 @@ export const createUser = async (email: string, password: string) => {
  * サインイン
  * @param email 
  * @param password 
+ * @param remember
  * @returns 
  */
-export const signInUser = async (email: string, password: string) => {
+export const signInUser = async (email: string, password: string, remember: boolean) => {
   const auth = getAuth();
+  auth.setPersistence(remember ? browserLocalPersistence : browserSessionPersistence);
   const credentials = await signInWithEmailAndPassword(auth, email, password);
   
   return credentials.user;
